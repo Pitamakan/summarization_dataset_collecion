@@ -1,0 +1,71 @@
+<div class="block">
+	<div class="blockButtons">
+		<div class='tabScroller'>
+			<span class='leftScroll'>
+				<span class="material-icons">arrow_back</span>
+			</span>
+			<span class="tabNumbers">
+				<span class='curTab'></span>
+				/
+				<span class='tabsCount'></span>
+			</span>
+			<span class='rightScroll'>
+				<span class="material-icons">arrow_forward</span>
+			</span>
+			<div class='tabList'></div>
+		</div>
+	</div>
+
+	<div class="plates-container">
+		<div class="plate">
+			<div class="plate-inner">
+				<div class="plate-content">
+						{{#if paragraph}}
+							<b>Прочитайте текст:</b>
+							<br>
+							<br>
+							{{{paragraph}}}
+						{{/if}}
+						{{#if (not paragraph)}}
+							<div class="last_task_container"></div>
+						{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fields">
+		<div class="fields-inner">
+			<div class="field-container">
+				{{#if paragraph}}
+					<div class="field-title">Напишите краткое содержание фрагмента текста одним-двумя предложениями:</div>
+					<div class="field-verdicts">
+						{{field type="textarea" name="summary" width="100%" rows=3 resize="vertical"}}
+					</div>
+				{{/if}}
+				{{#if (not paragraph)}}
+					<div class="field-title">Выпишите через запятую номера предложений, содержащую основную информацию из текста.</div>
+					<div class="field-verdicts">
+						{{field type="textarea" name="valuable_paragraphs" width="100%" rows=2}}
+					</div>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+
+	<div class="blockButtons">
+		<div class='tabScroller'>
+			<span class='leftScroll'>
+				<span class="material-icons">arrow_back</span>
+			</span>
+			<span class="tabNumbers">
+				<span class='curTab'></span>
+				/
+				<span class='tabsCount'></span>
+			</span>
+			<span class='rightScroll'>
+				<span class="material-icons">arrow_forward</span>
+			</span>
+		</div>
+	</div>
+</div>

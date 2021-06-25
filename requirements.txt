@@ -1,0 +1,3 @@
+pandas
+numpy
+toloka-kit==0.1.7

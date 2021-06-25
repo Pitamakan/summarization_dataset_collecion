@@ -1,0 +1,39 @@
+<div class="block">
+	<div class="blockButtons">
+		<div class='tabScroller'>
+			<span class='leftScroll'>
+				<span class="material-icons">arrow_back</span>
+			</span>
+			<span class="tabNumbers">
+				<span class='curTab'></span>
+				/
+				<span class='tabsCount'></span>
+			</span>
+			<span class='rightScroll'>
+				<span class="material-icons">arrow_forward</span>
+			</span>
+			<div class='tabList'></div>
+		</div>
+	</div>
+
+	<div class="plate">
+		<b>Прочитайте текст:</b>
+		<div class="text">{{{paragraph}}}</div>
+	</div>
+
+	<div class="fields">
+		<p>Выберите предложения с подходящим пересказом текста согласно инструкции.</p>
+		<table cellspacing="0" id="maket">
+			<tr> 
+				<td id="leftcol">{{field type="radio" name="result" value="1" hotkey="1"}}</td>
+				<td id="rightcol">{{{summary1}}}</td>
+			</tr>
+		</table>
+		<table cellspacing="0" id="maket">
+			<tr> 
+				<td id="leftcol">{{field type="radio" name="result" value="2" hotkey="2"}}</td>
+				<td id="rightcol">{{{summary2}}}</td>
+			</tr>
+		</table>
+	</div>
+</div>

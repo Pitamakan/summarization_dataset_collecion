@@ -1,0 +1,331 @@
+body {
+    overflow-x: hidden;
+}
+
+.task-suite {
+    padding: 0;
+    margin: 0;
+    width: 100000px;
+    display: block;
+    background: #f2f2f2;
+    background-attachment: fixed !important;
+    position: relative;
+    left: -000vw;
+    transition: left 0.3s ease-out;
+}
+.task {
+    padding: 20px;
+    margin: 0 0 40px;
+    background: none;
+    display: inline-block;
+    width: 100vw;
+    border: 0 none !important;
+    box-shadow: none !important;
+    transition: all .3s ease-in 0s;
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+
+.block {
+  background: #fff;
+  padding: 10px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.plates-container {
+	margin-bottom: 30px;
+	padding: 10px;
+}
+
+.plate {
+  border: 1px solid rgba(115, 197, 121, 0.6);
+  border-radius: 4px;
+  margin: 15px 7px 7px;
+  position: relative;
+  padding: 15px 7px 7px 7px;
+}
+
+.plate-title {
+	background: #ffffff;
+	position: absolute;
+  top: -15px;
+  display: inline-block;
+  padding: 7px 10px 7px 10px;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 4px;
+  border: 1px solid rgba(115, 197, 121, 0.6);
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.plate-btn {
+	background: #ffffff;
+	position: absolute;
+  top: -15px;
+  display: inline-block;
+  padding: 7px 10px 7px 10px;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 4px;
+  border: 1px solid rgba(115, 197, 121, 0.6);
+  font-weight: 600;
+  right: 18px;
+}
+
+.plate-btn:hover {
+	z-index: 1000;
+}
+
+.plate-btn-title {
+	color: #999999;
+}
+
+.plate-btn-inner {
+	display: none;
+	max-width: 750px;
+	background: #f5f5f5;
+	padding: 5px 10px;
+}
+
+.plate-btn:hover .plate-btn-inner {
+	display: block;
+}
+
+.plate-btn:hover .plate-btn-title {
+	display: none;
+}
+
+.plate-sub-title {
+	color: #999999;
+	margin-right: 10px;
+	white-space: nowrap;	
+	line-height: 22px;
+}
+
+.plate-sub-text {
+  word-break: break-word;
+  white-space: pre-line;
+  line-height: 22px;
+}
+
+.plate-q-icon {
+	margin-right: 5px;
+}
+
+.plate-q-title {
+	color: #999999;
+	line-height: 24px;
+}
+
+.plate-q-icon .material-icons {
+	font-size: 20px;
+}
+
+.plate-q {
+	display: flex;
+}
+
+.plate-bottom {
+	margin-top: 20px;
+}
+
+.plate-btn-row {
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.plate-row {
+	display: flex;
+}
+
+.link {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.link a {
+    color: #A24F00;
+    font-weight: 600;
+    word-break: break-all;
+}
+
+.link i {
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+}
+
+.fields {
+  border: 2px solid rgb(255, 188, 0);
+  border-radius: 4px;
+  margin: 10px 10px 10px;
+  padding: 10px;
+}
+
+.fields-inner {
+	background: #f5f5f5;
+	padding: 10px;
+}
+
+.field-container {
+	margin-bottom: 10px;
+}
+
+.field-container:last-child {
+	margin-bottom: 0px;
+}
+
+.tr-table {
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  margin: 8px;
+  padding: 8px;
+}
+
+.tr-table > table {
+  width: 100%;
+}
+
+.tr-table tr {
+  height: 26px;
+}
+
+.tr-table td:first-child {
+  width: 25%;
+  color: #808080;
+  padding-right: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.tr-table td:last-child {
+  width: 75%;
+  font-size: 14px;
+}
+
+.tr-table td {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.field-title {
+	font-weight: 700;
+}
+
+.extraPlayback {
+  font-style: italic;
+}
+
+.blockButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tabScroller {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.leftScroll, .rightScroll {
+  cursor: pointer;
+}
+
+.task-suite .task {
+    margin: 0;
+}
+
+.tabNumbers {
+  padding: 0px 10px;
+}
+
+.tabList {
+    z-index: 100000;
+    max-height: 0;
+    left: 0;
+    top: 23px;
+    position: absolute;
+    transition: max-height .2s cubic-bezier(0, 0.3, 0.24, 0.59) 0s;
+    overflow: hidden;
+    background: #f5f5f5;
+    border-radius: 3px;
+}
+
+.tabScroller:hover .tabList {
+  max-height: none;
+}
+
+.tabListItemName {
+    display: inline-block;
+    margin: 1px 7px 1px 14px;
+}
+
+.tabListItem {
+    padding: 3px 0px 3px 4px;
+    font-weight: 400;
+    position: relative;
+    margin: 2px 5px 2px 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.tabListItem.selected {
+    color: #404040;
+    opacity: 0.8;
+    font-weight: 600;
+    cursor: default;
+    background: #ffe478;
+    border-radius: 3px;
+}
+
+
+.text {
+  padding: 10px;
+  background-color: #F3F3F3;
+}
+.block {
+  display: block;
+}
+
+.row {
+  display: table;
+  padding: 10px;
+  background-color: #FFFDD0;
+}
+
+.column_checkbox {
+  float: left;
+  width: 5%;
+}
+
+.column_summary{
+  float: right;
+  width: 90%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#maket {
+  width: 100%; /* Ширина всей таблицы */
+  border: 1px solid #000;
+}
+TD {
+  vertical-align: top; /* Вертикальное выравнивание в ячейках */
+  padding: 10px; /* Поля вокруг ячеек */
+}
+TD#leftcol {
+  width: 5%; /* Ширина левой колонки */
+  background: #ddd; /* Цвет фона левой колонки */
+}
+TD#rightcol {
+  background: #FFFDD0; /* Цвет фона правой колонки */
+}

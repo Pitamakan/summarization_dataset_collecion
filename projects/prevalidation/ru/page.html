@@ -1,0 +1,50 @@
+<div class="block">
+	<div class="blockButtons">
+		<div class='tabScroller'>
+			<span class='leftScroll'>
+				<span class="material-icons">arrow_back</span>
+			</span>
+			<span class="tabNumbers">
+				<span class='curTab'></span>
+				/
+				<span class='tabsCount'></span>
+			</span>
+			<span class='rightScroll'>
+				<span class="material-icons">arrow_forward</span>
+			</span>
+			<div class='tabList'></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="plate">
+			<b>Посмотрите текст:</b>
+			<br><br>
+			<div class="text">{{{text}}}</div>
+		</div>
+
+		<div class="fields">
+			<div class="field-container">
+				<div class="field-title">Получится ли написать пересказ текста?</div>
+				<div class="field-verdicts">
+					{{field type="radio" name="summarized" label="Да" value=true hotkey="q" size="L"}}
+					{{field type="radio" name="summarized" label="Нет" value=false hotkey="w" size="L"}}
+				</div>
+			</div>
+		</div>
+
+		<div class="fields">
+			<div class="field-container">
+				<div class="field-title">Заметка</div><br>
+				<div class="field-verdicts">
+					<b>Точно не подойдут:</b><br><br>
+					- Текст полностью из перечислений<br><br>
+					- Бессмысленный набор слов<br><br>
+					- Текст состоящий по большей части из чисел<br><br>
+					- Состав продукта/лекарства<br><br>
+					- Смешанный текст на разных языках<br><br>
+					<b>Почти всё остальное подходит!</b>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
