@@ -1,4 +1,0 @@
-js:
-$TOLOKA_ASSETS/js/toloka-handlebars-templates.js
-css:
-https://storage.mds.yandex.net/get-ang2-data/40144/static/material-icons.css?content_type=text/css

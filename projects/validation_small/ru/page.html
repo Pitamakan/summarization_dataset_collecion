@@ -1,0 +1,60 @@
+
+
+<div class="row">
+    <div class="column_text">
+      <div class="label">
+          Отрывок:
+          <br><br>
+      </div>
+      {{{paragraph}}}
+      <br><br><br>
+      <b>При необходимости Вы можете посмотреть текст целиком.</b>
+      <br>
+      <i>Нужный отрывок выделен жирным.</i><br><br>
+    <div class="prokrutka"> {{{text_full}}} </div>
+    </div>
+    <div class="column_textarea">
+      <div class="label">
+          Пересказ:
+      </div>
+      {{{summary}}}
+  
+      <div class="fields">
+          <div class="fields-inner">
+              <div class="field-container">
+                  <div class="field-title">Оцените общее качество пересказа</div>
+                  <div class="field-verdicts">
+                      {{field type="radio" name="quality" label="Ужасно" value=1 hotkey="1" size="L"}}<br>
+                      {{field type="radio" name="quality" label="Плохо" value=2 hotkey="2" size="L"}}<br>
+                      {{field type="radio" name="quality" label="Средне" value=3 hotkey="3" size="L"}}<br>
+                      {{field type="radio" name="quality" label="Хорошо" value=4 hotkey="4" size="L"}}<br>
+                      {{field type="radio" name="quality" label="Отлично" value=5 hotkey="5" size="L"}}<br>
+                  </div>
+              </div>
+              <div class="field-container">
+                  <div class="field-title">Это скорее пересказ или заголовок к отрывку?</div>
+                  <div class="field-verdicts">
+                      {{field type="radio" name="not_as_title" label="Пересказ" value=true hotkey="q" size="L"}}
+                      {{field type="radio" name="not_as_title" label="Заголовок" value=false hotkey="w" size="L"}}
+                  </div>
+              </div>
+              <div class="field-container">
+                  <div class="field-title">Пересказ соотносится с темой отрывка?</div>
+                  <div class="field-verdicts">
+                      {{field type="radio" name="theme" label="Да" value=true hotkey="a" size="L"}}
+                      {{field type="radio" name="theme" label="Нет" value=false hotkey="s" size="L"}}
+                  </div>
+              </div>
+              <div class="field-container">
+                  <div class="field-title">Пересказ полностью скопирован из текста?</div>
+                  <div class="field-verdicts">
+                      {{field type="radio" name="originally" label="Да" value=false hotkey="z" size="L"}}
+                      {{field type="radio" name="originally" label="Нет" value=true hotkey="x" size="L"}}
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  

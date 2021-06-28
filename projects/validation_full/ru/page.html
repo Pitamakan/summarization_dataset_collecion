@@ -1,0 +1,95 @@
+<div class="block">
+	<div class="blockButtons">
+    <div class='tabScroller'>
+        <span class='leftScroll'>
+					<span class="material-icons">arrow_back</span>
+        </span>
+        <span class="tabNumbers">
+            <span class='curTab'></span>
+            /
+            <span class='tabsCount'></span>
+        </span>
+        <span class='rightScroll'>
+					<span class="material-icons">arrow_forward</span>
+        </span>
+        <div class='tabList'></div>
+    </div>
+	</div>
+
+	<div class="plates-container">
+		<div class="plate">
+			<div class="plate-inner">
+				<div class="plate-content">
+                        <b>Прочитайте текст:</b>
+                        <br>
+                        <br>
+                        {{{paragraph}}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fields">
+		<div class="fields-inner">
+			<div class="field-container">
+                <div class="field-title">Прочитайте пересказ:</div>
+                <div class="field-verdicts">
+                    <br>
+                    {{{summary}}}
+                </div>
+			</div>
+		</div>
+	</div>
+
+	    <div class="fields">
+		<div class="fields-inner">
+			<div class="field-container">
+				<div class="field-title">Оцените общее качество пересказа</div>
+				<div class="field-verdicts">
+					{{field type="radio" name="quality" label="Ужасно" value=1 hotkey="1" size="L"}}
+					{{field type="radio" name="quality" label="Плохо" value=2 hotkey="2" size="L"}}
+					{{field type="radio" name="quality" label="Средне" value=3 hotkey="3" size="L"}}
+					{{field type="radio" name="quality" label="Хорошо" value=4 hotkey="4" size="L"}}
+					{{field type="radio" name="quality" label="Отлично" value=5 hotkey="5" size="L"}}
+				</div>
+			</div>
+			<div class="field-container">
+				<div class="field-title">Это скорее пересказ или заголовок к отрывку?</div>
+				<div class="field-verdicts">
+					{{field type="radio" name="not_as_title" label="Пересказ" value=true hotkey="q" size="L"}}
+					{{field type="radio" name="not_as_title" label="Заголовок" value=false hotkey="w" size="L"}}
+				</div>
+			</div>
+			<div class="field-container">
+				<div class="field-title">Пересказ соотносится с темой отрывка?</div>
+				<div class="field-verdicts">
+					{{field type="radio" name="theme" label="Да" value=true hotkey="a" size="L"}}
+					{{field type="radio" name="theme" label="Нет" value=false hotkey="s" size="L"}}
+				</div>
+			</div>
+			<div class="field-container">
+				<div class="field-title">Пересказ полностью скопирован из текста?</div>
+				<div class="field-verdicts">
+					{{field type="radio" name="originally" label="Да" value=false hotkey="z" size="L"}}
+					{{field type="radio" name="originally" label="Нет" value=true hotkey="x" size="L"}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="blockButtons">
+    <div class='tabScroller'>
+        <span class='leftScroll'>
+					<span class="material-icons">arrow_back</span>
+        </span>
+        <span class="tabNumbers">
+            <span class='curTab'></span>
+            /
+            <span class='tabsCount'></span>
+        </span>
+        <span class='rightScroll'>
+					<span class="material-icons">arrow_forward</span>
+        </span>
+    </div>
+	</div>
+</div>
